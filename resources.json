@@ -1,0 +1,410 @@
+{
+  "site": {
+    "title": "Freebies Directory — Free Legal Aid & Self-Help Resources",
+    "subtitle": "Court forms, lawyer referral, tenant and consumer help. Official links only. Education only.",
+    "credit": "Asdale Dynamics, LLC",
+    "disclaimer": "This directory is for general educational information only. It is not legal advice, and it does not create an attorney-client relationship. For help with a specific legal problem, contact a qualified attorney or a legal aid office in your area. Links point to official government and legal aid websites; Asdale Dynamics, LLC does not operate those sites and is not responsible for their content."
+  },
+  "groups": [
+    {
+      "id": "court-forms",
+      "name": "Court Forms & Self-Help",
+      "description": "Official court forms and self-help centers from federal and state courts.",
+      "resources": [
+        {
+          "id": "uscourts-forms",
+          "name": "U.S. Courts — Official Court Forms",
+          "url": "https://www.uscourts.gov/forms",
+          "description": "Free official forms for federal bankruptcy, civil, criminal, and appellate cases.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Court forms"
+        },
+        {
+          "id": "uscourts-pacer-fee-waiver",
+          "name": "U.S. Courts — PACER Fee Waiver",
+          "url": "https://www.uscourts.gov/services-forms/pacer-fee-waiver",
+          "description": "Request to access federal court records online without paying PACER fees (income-based).",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Fee waiver"
+        },
+        {
+          "id": "usa-gov-courts",
+          "name": "USA.gov — Find State and Local Courts",
+          "url": "https://www.usa.gov/courts",
+          "description": "Official directory to state and local court websites, including self-help resources and forms.",
+          "jurisdiction": "50 states",
+          "cost": "Free",
+          "type": "Court directory"
+        },
+        {
+          "id": "indiana-courts-self-help",
+          "name": "Indiana Courts — Self-Service Legal Center",
+          "url": "https://www.in.gov/judiciary/self-service/",
+          "description": "Indiana court forms and self-help resources (home state of Asdale Dynamics, LLC).",
+          "jurisdiction": "Indiana",
+          "cost": "Free",
+          "type": "Court forms"
+        },
+        {
+          "id": "california-courts-self-help",
+          "name": "California Courts — Online Self-Help Center",
+          "url": "https://www.courts.ca.gov/selfhelp.htm",
+          "description": "Free court forms and self-help guides for family, housing, traffic, and more.",
+          "jurisdiction": "California",
+          "cost": "Free",
+          "type": "Court forms"
+        },
+        {
+          "id": "texas-courts-forms",
+          "name": "Texas Courts — Court Forms",
+          "url": "https://www.txcourts.gov/self-help/",
+          "description": "Official Texas court self-help forms and instructions.",
+          "jurisdiction": "Texas",
+          "cost": "Free",
+          "type": "Court forms"
+        },
+        {
+          "id": "nycourthelp",
+          "name": "NY Courts — CourtHelp",
+          "url": "https://nycourthelp.gov/",
+          "description": "Free court forms, how-to guides, and locator for New York courts.",
+          "jurisdiction": "New York",
+          "cost": "Free",
+          "type": "Court forms & guides"
+        }
+      ]
+    },
+    {
+      "id": "lawyer-referral",
+      "name": "Lawyer Referral & Free Legal Aid",
+      "description": "Find free or low-cost legal help and attorney referral services.",
+      "resources": [
+        {
+          "id": "lsc-find-legal-aid",
+          "name": "Legal Services Corporation — Find Legal Aid",
+          "url": "https://www.lsc.gov/what-legal-aid/find-legal-aid",
+          "description": "Official locator for federally funded legal aid offices serving low-income individuals.",
+          "jurisdiction": "50 states",
+          "cost": "Free (eligibility based)",
+          "type": "Legal aid office locator"
+        },
+        {
+          "id": "aba-lawyer-referral",
+          "name": "American Bar Association — Lawyer Referral Directory",
+          "url": "https://www.americanbar.org/groups/legal_services/fls-home/ftl-lawyer-referral-directory/",
+          "description": "Official ABA directory of state and local lawyer referral services.",
+          "jurisdiction": "50 states",
+          "cost": "Referral service (consultation fees may apply)",
+          "type": "Lawyer referral"
+        },
+        {
+          "id": "lawhelp",
+          "name": "LawHelp.org — Free Legal Help by State",
+          "url": "https://www.lawhelp.org",
+          "description": "Find free legal aid organizations and self-help resources in your state.",
+          "jurisdiction": "50 states",
+          "cost": "Free (eligibility based)",
+          "type": "Legal aid & referral"
+        },
+        {
+          "id": "pro-bono-net",
+          "name": "Pro Bono Net — Find Legal Help",
+          "url": "https://www.probono.net",
+          "description": "National network connecting people with free legal help and volunteer attorney programs.",
+          "jurisdiction": "50 states",
+          "cost": "Free (eligibility based)",
+          "type": "Pro bono referral"
+        },
+        {
+          "id": "indiana-bar-referral",
+          "name": "Indiana State Bar — Lawyer Referral Service",
+          "url": "https://www.inbar.org/public/lawyer-referral-service/",
+          "description": "Indiana State Bar Association lawyer referral service (home state of Asdale Dynamics, LLC).",
+          "jurisdiction": "Indiana",
+          "cost": "Referral service (consultation fees may apply)",
+          "type": "Lawyer referral"
+        },
+        {
+          "id": "va-legal-aid",
+          "name": "U.S. Department of Veterans Affairs — Legal Assistance",
+          "url": "https://www.va.gov/ogc/apps/accreditation/index.asp",
+          "description": "VA-accredited attorneys and agents who can help with veterans benefits claims at no charge.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Veterans legal help"
+        },
+        {
+          "id": "military-legal-assistance",
+          "name": "Military Legal Assistance Locator",
+          "url": "https://legalassistance.law.af.mil/",
+          "description": "Free legal assistance for servicemembers and eligible family members (JAG locator).",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Military legal help"
+        }
+      ]
+    },
+    {
+      "id": "tenant-housing",
+      "name": "Tenant & Housing Help",
+      "description": "Official resources for renters: rights, repairs, eviction help, and fair housing.",
+      "resources": [
+        {
+          "id": "hud-tenants",
+          "name": "HUD — Tenant Rights and Resources",
+          "url": "https://www.hud.gov/topics/rental_assistance",
+          "description": "U.S. Department of Housing and Urban Development resources for renters, including fair housing complaints.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Tenant help"
+        },
+        {
+          "id": "hud-fair-housing",
+          "name": "HUD — Fair Housing Complaint",
+          "url": "https://www.hud.gov/program_offices/fair_housing_equal_opp/complaint-process",
+          "description": "File a federal fair housing complaint for discrimination in rental, sales, or lending.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Fair housing"
+        },
+        {
+          "id": "consumerfinance-housing-counseling",
+          "name": "CFPB — Find a Housing Counselor",
+          "url": "https://www.consumerfinance.gov/find-a-housing-counselor/",
+          "description": "HUD-approved housing counselors for mortgage, rent, and foreclosure help (free or low cost).",
+          "jurisdiction": "50 states",
+          "cost": "Free or low cost",
+          "type": "Housing counseling"
+        },
+        {
+          "id": "usa-gov-eviction",
+          "name": "USA.gov — Eviction and Rental Help",
+          "url": "https://www.usa.gov/eviction-rental-help",
+          "description": "Official guide to eviction prevention, rental assistance, and tenant rights.",
+          "jurisdiction": "50 states",
+          "cost": "Free",
+          "type": "Eviction help"
+        },
+        {
+          "id": "courts-tenant-self-help",
+          "name": "National Center for State Courts — Eviction Resources",
+          "url": "https://www.ncsc.org/topics/housing/eviction",
+          "description": "Court eviction resources and self-help links from state courts nationwide.",
+          "jurisdiction": "50 states",
+          "cost": "Free",
+          "type": "Court resources"
+        }
+      ]
+    },
+    {
+      "id": "consumer-help",
+      "name": "Consumer Help",
+      "description": "Official help with scams, debt, credit, warranties, and unfair business practices.",
+      "resources": [
+        {
+          "id": "ftc-consumer",
+          "name": "FTC — Consumer Advice",
+          "url": "https://www.consumer.ftc.gov/",
+          "description": "Federal Trade Commission practical guidance on scams, identity theft, credit, and shopping.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Consumer guidance"
+        },
+        {
+          "id": "ftc-report-fraud",
+          "name": "FTC — Report Fraud",
+          "url": "https://reportfraud.ftc.gov/",
+          "description": "Official site to report scams, fraud, and bad business practices to the FTC.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Fraud reporting"
+        },
+        {
+          "id": "cfpb",
+          "name": "Consumer Financial Protection Bureau",
+          "url": "https://www.consumerfinance.gov/",
+          "description": "Official help with credit cards, mortgages, student loans, debt collection, and credit reports.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Financial consumer help"
+        },
+        {
+          "id": "cfpb-complaint",
+          "name": "CFPB — Submit a Complaint",
+          "url": "https://www.consumerfinance.gov/complaint/",
+          "description": "Submit an official complaint about a financial product or service.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Complaint filing"
+        },
+        {
+          "id": "usa-gov-consumer-complaints",
+          "name": "USA.gov — File a Consumer Complaint",
+          "url": "https://www.usa.gov/consumer-complaints",
+          "description": "Official guide to filing complaints with companies, state, and federal agencies.",
+          "jurisdiction": "50 states",
+          "cost": "Free",
+          "type": "Complaint guide"
+        },
+        {
+          "id": "identity-theft",
+          "name": "FTC — IdentityTheft.gov",
+          "url": "https://www.identitytheft.gov/",
+          "description": "Official federal resource to report identity theft and create a recovery plan.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Identity theft recovery"
+        },
+        {
+          "id": "donotcall",
+          "name": "FTC — National Do Not Call Registry",
+          "url": "https://www.donotcall.gov/",
+          "description": "Register your phone number to reduce telemarketing calls (official registry).",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Do Not Call"
+        }
+      ]
+    },
+    {
+      "id": "family-law",
+      "name": "Family Law",
+      "description": "Official help with divorce, custody, child support, and domestic violence.",
+      "resources": [
+        {
+          "id": "vawo-domestic-violence",
+          "name": "National Domestic Violence Hotline",
+          "url": "https://www.thehotline.org/",
+          "description": "Confidential 24/7 support for domestic violence. Call 1-800-799-7233 or chat online.",
+          "jurisdiction": "50 states",
+          "cost": "Free",
+          "type": "Crisis support"
+        },
+        {
+          "id": "acf-child-support",
+          "name": "Office of Child Support Enforcement",
+          "url": "https://www.acf.hhs.gov/css",
+          "description": "U.S. Department of Health & Human Services child support program resources.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Child support"
+        },
+        {
+          "id": "usa-gov-divorce",
+          "name": "USA.gov — Divorce and Separation",
+          "url": "https://www.usa.gov/divorce",
+          "description": "Official overview of divorce, name change, and family law basics.",
+          "jurisdiction": "50 states",
+          "cost": "Free",
+          "type": "Family law guide"
+        }
+      ]
+    },
+    {
+      "id": "benefits",
+      "name": "Benefits & Public Assistance",
+      "description": "Official help applying for SNAP, Medicaid, disability, and other benefits.",
+      "resources": [
+        {
+          "id": "usa-gov-benefits",
+          "name": "USA.gov — Benefits and Financial Assistance",
+          "url": "https://www.usa.gov/benefits",
+          "description": "Official guide to government benefit programs, including food, health care, and cash assistance.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Benefits guide"
+        },
+        {
+          "id": "gov-snap",
+          "name": "USDA — SNAP (Food Assistance)",
+          "url": "https://www.fns.usda.gov/snap/eligibility",
+          "description": "Official Supplemental Nutrition Assistance Program eligibility and application info.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Food assistance"
+        },
+        {
+          "id": "ssa-disability",
+          "name": "Social Security Administration — Disability Benefits",
+          "url": "https://www.ssa.gov/disability/",
+          "description": "Official SSDI and SSI disability benefit application and eligibility information.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Disability benefits"
+        },
+        {
+          "id": "medicaid",
+          "name": "Medicaid & CHIP",
+          "url": "https://www.medicaid.gov/",
+          "description": "Official health coverage program for eligible low-income adults, children, and families.",
+          "jurisdiction": "50 states",
+          "cost": "Free or low cost",
+          "type": "Health coverage"
+        }
+      ]
+    },
+    {
+      "id": "records",
+      "name": "Criminal Records & Expungement",
+      "description": "Official resources for clearing or sealing criminal records where available.",
+      "resources": [
+        {
+          "id": "usa-gov-expungement",
+          "name": "USA.gov — Criminal Record Expungement",
+          "url": "https://www.usa.gov/criminal-record-expungement",
+          "description": "Official guide to sealing or expunging criminal records, with links to state processes.",
+          "jurisdiction": "50 states",
+          "cost": "Free",
+          "type": "Expungement guide"
+        },
+        {
+          "id": "fbi-background-check",
+          "name": "FBI — Identity History Summary Check",
+          "url": "https://www.fbi.gov/services/cjis/identity-history-summary-checks",
+          "description": "Request your own official FBI criminal history record (needed for expungement).",
+          "jurisdiction": "Federal",
+          "cost": "Fee applies",
+          "type": "Background check"
+        }
+      ]
+    },
+    {
+      "id": "immigration",
+      "name": "Immigration",
+      "description": "Official U.S. government immigration forms and help (education only — not legal advice).",
+      "resources": [
+        {
+          "id": "uscis-forms",
+          "name": "USCIS — Official Forms",
+          "url": "https://www.uscis.gov/forms/",
+          "description": "Free official immigration forms from U.S. Citizenship and Immigration Services.",
+          "jurisdiction": "Federal",
+          "cost": "Free (filing fees may apply)",
+          "type": "Immigration forms"
+        },
+        {
+          "id": "uscis-find-help",
+          "name": "USCIS — Find Legal Help",
+          "url": "https://www.uscis.gov/tools/find-legal-help",
+          "description": "Official list of recognized organizations and accredited representatives for immigration help.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Immigration legal help"
+        },
+        {
+          "id": "eoir-pro-bono",
+          "name": "EOIR — Pro Bono Legal Representation Lists",
+          "url": "https://www.justice.gov/eoir/pro-bono-legal-representation-lists",
+          "description": "Executive Office for Immigration Review lists of free legal representatives for immigration court.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Immigration court help"
+        }
+      ]
+    }
+  ],
+  "notes": "All links are official government or legal aid websites. This directory is educational only and is not a substitute for an attorney. Asdale Dynamics, LLC does not operate linked sites and is not responsible for their content.",
+  "updated": "2026-10-31"
+}

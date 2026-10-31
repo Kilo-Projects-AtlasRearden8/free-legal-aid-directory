@@ -1,0 +1,16 @@
+{
+  "name": "free-legal-aid-directory",
+  "version": "1.0.0",
+  "description": "Freebies directory of free legal aid and self-help resources: Markdown + static HTML site with client-side search. Credit Asdale Dynamics, LLC.",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node test/search.test.js",
+    "start": "python3 -m http.server 8080",
+    "verify": "npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "file:///workspace/kilo-lab/free-legal-aid-directory"
+  }
+}
