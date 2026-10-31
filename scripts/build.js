@@ -51,7 +51,7 @@ function buildHtml() {
         ${g.resources
           .map(
             (r) => `
-          <article class="resource-card" data-group="${escHtml(g.id)}" data-id="${escHtml(r.id)}">
+            <article class="resource-card" data-group="${escHtml(g.id)}" data-id="${escHtml(r.id)}" data-cost="${escHtml(r.cost)}">
             <header class="card-header">
               <h3 class="card-title"><a href="${escHtml(r.url)}" target="_blank" rel="noopener">${escHtml(r.name)}</a></h3>
               <span class="badge official">Official link</span>
@@ -106,7 +106,9 @@ function buildHtml() {
     <div class="toolbar">
       <label for="search">Search resources</label>
       <input type="search" id="search" placeholder="Search names, topics, jurisdiction&#8230;" autocomplete="off">
+      <label class="toggle" for="free-only"><input type="checkbox" id="free-only"> Free only</label>
       <span class="count" id="count">0 results</span>
+      <div id="no-results" class="no-results-msg">No resources match your filters. Try clearing the search or turning off “Free only”.</div>
     </div>
 
     <p class="disclaimer">${escHtml(site.disclaimer)}</p>

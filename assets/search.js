@@ -4,6 +4,7 @@
   var dataEl = document.getElementById("resources-data");
   var searchInput = document.getElementById("search");
   var countEl = document.getElementById("count");
+  var freeOnly = document.getElementById("free-only");
   var filters = document.querySelectorAll(".filter");
   var groups = document.querySelectorAll(".group-section");
   var cards = document.querySelectorAll(".resource-card");
@@ -16,24 +17,31 @@
     return;
   }
 
-  var groupsById = {};
-  DATA.groups.forEach(function (g) {
-    groupsById[g.id] = g;
-  });
-
   var activeGroup = "all";
+  var showFreeOnly = false;
 
-  function matches(card, query) {
-    var text = (
-      card.dataset.group +
-      " " +
-      (card.querySelector(".card-title").textContent || "") +
-      " " +
-      (card.querySelector(".card-desc").textContent || "") +
-      " " +
-      (card.querySelector(".card-meta").textContent || "")
-    ).toLowerCase();
-    return query === "" || text.indexOf(query.toLowerCase()) !== -1;
+  function esc(text) {
+    return String(text)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  }
+
+  function highlight(text, query) {
+    var q = query.trim();
+    if (!q) {
+      return esc(text);
+    }
+    var re = new RegExp(
+      "(" + q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")",
+      "gi"
+    );
+    return esc(text).replace(re, '<mark>$1</mark>');
+  }
+
+  function isFree(card) {
+    var cost = (card.getAttribute("data-cost") || "").toLowerCase();
+    return /free/.test(cost) && !/fee/.test(cost);
   }
 
   function render() {
@@ -41,12 +49,45 @@
     var visible = 0;
 
     cards.forEach(function (card) {
-      var show = card.dataset.group === activeGroup || activeGroup === "all";
-      show = show && matches(card, query);
+      var descEl = card.querySelector(".card-desc");
+      var titleEl = card.querySelector(".card-title");
+      var groupMatch =
+        card.getAttribute("data-group") === activeGroup || activeGroup === "all";
+      var freeMatch = !showFreeOnly || isFree(card);
+
+      var blob =
+        (card.getAttribute("data-group") || "") +
+        " " +
+        (titleEl ? titleEl.textContent : "") +
+        " " +
+        (descEl ? descEl.textContent : "") +
+        " " +
+        (card.querySelector(".card-meta") ? card.querySelector(".card-meta").textContent : "");
+
+      var queryMatch = query === "" || blob.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+      var show = groupMatch && freeMatch && queryMatch;
+
       card.style.display = show ? "" : "none";
-      if (show) visible += 1;
+
+      if (show) {
+        if (descEl) {
+          descEl.innerHTML = highlight(descEl.textContent, query);
+        }
+        if (titleEl) {
+          titleEl.innerHTML = highlight(titleEl.textContent, query);
+        }
+        visible += 1;
+      } else {
+        if (descEl) {
+          descEl.innerHTML = esc(descEl.textContent);
+        }
+        if (titleEl) {
+          titleEl.innerHTML = esc(titleEl.textContent);
+        }
+      }
     });
 
+    var anyNoResults = true;
     groups.forEach(function (section) {
       var hasVisible = Array.from(section.querySelectorAll(".resource-card")).some(
         function (c) {
@@ -54,10 +95,16 @@
         }
       );
       section.style.display = hasVisible ? "" : "none";
+      if (hasVisible) anyNoResults = false;
     });
 
     if (countEl) {
-      countEl.textContent = visible + " result" + (visible === 1 ? "" : "s");
+      countEl.textContent =
+        visible + " result" + (visible === 1 ? "" : "s");
+    }
+    var noResultsEl = document.getElementById("no-results");
+    if (noResultsEl) {
+      noResultsEl.style.display = anyNoResults ? "" : "none";
     }
   }
 
@@ -73,6 +120,10 @@
 
   if (searchInput) {
     searchInput.addEventListener("input", render);
+  }
+
+  if (freeOnly) {
+    freeOnly.addEventListener("change", render);
   }
 
   filters.forEach(function (button) {

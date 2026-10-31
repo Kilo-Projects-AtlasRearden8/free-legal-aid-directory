@@ -1,49 +1,69 @@
 # Freebies Directory — Free Legal Aid & Self-Help Resources
 
-Free legal aid and self-help resources: court forms, lawyer referral, tenant and consumer help, plus family law, benefits, records/expungement, and immigration. Grouped by issue. Official links only. Education only.
+A plain-English directory of free legal aid and self-help resources: court forms, lawyer referral, tenant and consumer help, plus debt/credit, veterans benefits, family law, expungement, and immigration. Grouped by issue. Official links only. Education only.
 
-Credit: **Asdale Dynamics, LLC**
+Published by **Asdale Dynamics, LLC**.
+
+## Who this is for
+
+Anyone looking for free, official help with a legal or life-admin problem without paying a lawyer up front. The directory keeps to resources you can use yourself — court forms, self-help centers, lawyer referral services, tenant and housing help, consumer protection, benefits, and record-clearing guides. Every link goes to an official government or legal aid website.
 
 ## What's inside
 
-- `resources.json` — single source of data (8 issue groups, 39 official resources)
-- `resources.md` — mirror markdown directory
-- `index.html` — static site with client-side search (vanilla JS, no build step needed to view)
-- `assets/search.js` — client-side search, works opened straight from `file://`
+- `resources.json` — single source of data: **10 issue groups, 43 official resources**
+- `resources.md` — mirror markdown directory (generated from `resources.json`)
+- `index.html` — static site with client-side search (works opened straight from `file://`, no server needed)
+- `assets/search.js` — vanilla-JS client-side search with "Free only" filtering and match highlighting
 - `assets/style.css` — clean, responsive styles
 - `scripts/build.js` — regenerates `index.html` and `resources.md` from `resources.json`
+- `test/search.test.js` — validates the data and search matching logic
+
+Issue groups:
+
+1. Court Forms & Self-Help
+2. Lawyer Referral & Free Legal Aid
+3. Tenant & Housing Help
+4. Consumer Help
+5. Debt & Credit Help
+6. Family Law
+7. Benefits & Public Assistance
+8. Criminal Records & Expungement
+9. Veterans & Military
+10. Immigration
 
 ## How to run
 
-Open `index.html` directly in your browser — no server required. Client-side search works from `file://`.
+Open `index.html` directly in your browser — no server, no install, no API keys required. Client-side search works from `file://`.
 
 Or serve it locally:
 
 ```bash
-npm install   # none needed; scripts only
-npm run start # python3 http.server on http://localhost:8080
+npm start   # python3 http.server at http://localhost:8080
 ```
 
 To regenerate the site from the data file:
 
 ```bash
-npm run build
+npm run build   # regenerates index.html and resources.md
+npm test        # runs the validation suite
 ```
 
-## Verification
+## How to maintain the data
 
-```bash
-npm test      # validates resources.json and search matching logic
-npm run build # regenerates index.html and resources.md
-```
+1. Edit `resources.json` — add or update resources under the appropriate issue group.
+2. Every URL must be HTTPS and point to an official government or legal aid site.
+3. Run `npm run build` to regenerate `index.html` and `resources.md`.
+4. Run `npm test` to validate structure, unique IDs/URLs, official-domain allowlist, and search logic.
 
-## Education only
+## Education only — not legal advice
 
-This directory is for general educational information only. It is not legal advice and does not create an attorney-client relationship. For help with a specific legal problem, contact a qualified attorney or legal aid office in your area. All links point to official government and legal aid websites; Asdale Dynamics, LLC does not operate those sites and is not responsible for their content.
+This directory is for general educational information only. It is not legal advice, and it does not create an attorney-client relationship. For help with a specific legal problem, contact a qualified attorney or a legal aid office in your area.
+
+All links point to official government and legal aid websites. Asdale Dynamics, LLC does not operate those sites and is not responsible for their content.
 
 ## About
 
-Published by **Asdale Dynamics, LLC** (Indiana, formed Oct 2026) — beginner-friendly education, practical tools, and accessible life-admin helpers.
+Published by **Asdale Dynamics, LLC** (Indiana, formed Oct 2026) — beginner-friendly education, practical tools, and accessible life-admin helpers. Built in the same plain-English, step-by-step, never-condescending style as The Massive AI Manual and dylanasdale.github.io.
 
 ## License
 

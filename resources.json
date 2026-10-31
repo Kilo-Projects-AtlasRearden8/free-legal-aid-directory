@@ -125,24 +125,6 @@
           "jurisdiction": "Indiana",
           "cost": "Referral service (consultation fees may apply)",
           "type": "Lawyer referral"
-        },
-        {
-          "id": "va-legal-aid",
-          "name": "U.S. Department of Veterans Affairs — Legal Assistance",
-          "url": "https://www.va.gov/ogc/apps/accreditation/index.asp",
-          "description": "VA-accredited attorneys and agents who can help with veterans benefits claims at no charge.",
-          "jurisdiction": "Federal",
-          "cost": "Free",
-          "type": "Veterans legal help"
-        },
-        {
-          "id": "military-legal-assistance",
-          "name": "Military Legal Assistance Locator",
-          "url": "https://legalassistance.law.af.mil/",
-          "description": "Free legal assistance for servicemembers and eligible family members (JAG locator).",
-          "jurisdiction": "Federal",
-          "cost": "Free",
-          "type": "Military legal help"
         }
       ]
     },
@@ -401,6 +383,83 @@
           "jurisdiction": "Federal",
           "cost": "Free",
           "type": "Immigration court help"
+        }
+      ]
+    },
+    {
+      "id": "debt-credit",
+      "name": "Debt & Credit Help",
+      "description": "Official help with debt collection, credit reports, and money problems.",
+      "resources": [
+        {
+          "id": "cfpb-debt-collection",
+          "name": "CFPB — Debt Collection",
+          "url": "https://www.consumerfinance.gov/consumer-tools/debt-collection/",
+          "description": "Consumer Financial Protection Bureau tools and guidance for dealing with debt collectors.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Debt help"
+        },
+        {
+          "id": "cfpb-credit-reports",
+          "name": "CFPB — Credit Reports and Scores",
+          "url": "https://www.consumerfinance.gov/consumer-tools/credit-reports/",
+          "description": "Get and dispute your credit reports for free.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Credit help"
+        },
+        {
+          "id": "ftc-debt-collection",
+          "name": "FTC — Debt Collection",
+          "url": "https://www.consumer.ftc.gov/articles/debt-collection",
+          "description": "Federal Trade Commission guidance on debt collection and your rights.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Debt help"
+        },
+        {
+          "id": "ftc-credit-debt",
+          "name": "FTC — Credit and Debt",
+          "url": "https://www.consumer.ftc.gov/articles/credit-and-debt",
+          "description": "Federal Trade Commission guidance on credit cards, loans, and managing debt.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Credit help"
+        }
+      ]
+    },
+    {
+      "id": "veterans-military",
+      "name": "Veterans & Military",
+      "description": "Official help for veterans, servicemembers, and families: benefits, claims, and legal aid.",
+      "resources": [
+        {
+          "id": "va-legal-aid",
+          "name": "U.S. Department of Veterans Affairs — Legal Assistance",
+          "url": "https://www.va.gov/ogc/agents/",
+          "description": "VA-accredited attorneys and agents who can help with veterans benefits claims at no charge.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Veterans legal help"
+        },
+        {
+          "id": "va-benefits",
+          "name": "U.S. Department of Veterans Affairs — Benefits",
+          "url": "https://www.va.gov/",
+          "description": "VA benefits: disability compensation, pension, health care, and education (GI Bill).",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Veterans benefits"
+        },
+        {
+          "id": "military-legal-assistance",
+          "name": "Military Legal Assistance Locator",
+          "url": "https://legalassistance.law.af.mil/",
+          "description": "Free legal assistance for servicemembers and eligible family members (JAG locator).",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Military legal help"
         }
       ]
     }

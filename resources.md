@@ -33,8 +33,6 @@ Find free or low-cost legal help and attorney referral services.
 - [LawHelp.org — Free Legal Help by State](https://www.lawhelp.org) — 50 states · Free (eligibility based) · Legal aid & referral
 - [Pro Bono Net — Find Legal Help](https://www.probono.net) — 50 states · Free (eligibility based) · Pro bono referral
 - [Indiana State Bar — Lawyer Referral Service](https://www.inbar.org/public/lawyer-referral-service/) — Indiana · Referral service (consultation fees may apply) · Lawyer referral
-- [U.S. Department of Veterans Affairs — Legal Assistance](https://www.va.gov/ogc/apps/accreditation/index.asp) — Federal · Free · Veterans legal help
-- [Military Legal Assistance Locator](https://legalassistance.law.af.mil/) — Federal · Free · Military legal help
 
 ### Tenant & Housing Help
 
@@ -89,6 +87,23 @@ Official U.S. government immigration forms and help (education only — not lega
 - [USCIS — Official Forms](https://www.uscis.gov/forms/) — Federal · Free (filing fees may apply) · Immigration forms
 - [USCIS — Find Legal Help](https://www.uscis.gov/tools/find-legal-help) — Federal · Free · Immigration legal help
 - [EOIR — Pro Bono Legal Representation Lists](https://www.justice.gov/eoir/pro-bono-legal-representation-lists) — Federal · Free · Immigration court help
+
+### Debt & Credit Help
+
+Official help with debt collection, credit reports, and money problems.
+
+- [CFPB — Debt Collection](https://www.consumerfinance.gov/consumer-tools/debt-collection/) — Federal · Free · Debt help
+- [CFPB — Credit Reports and Scores](https://www.consumerfinance.gov/consumer-tools/credit-reports/) — Federal · Free · Credit help
+- [FTC — Debt Collection](https://www.consumer.ftc.gov/articles/debt-collection) — Federal · Free · Debt help
+- [FTC — Credit and Debt](https://www.consumer.ftc.gov/articles/credit-and-debt) — Federal · Free · Credit help
+
+### Veterans & Military
+
+Official help for veterans, servicemembers, and families: benefits, claims, and legal aid.
+
+- [U.S. Department of Veterans Affairs — Legal Assistance](https://www.va.gov/ogc/agents/) — Federal · Free · Veterans legal help
+- [U.S. Department of Veterans Affairs — Benefits](https://www.va.gov/) — Federal · Free · Veterans benefits
+- [Military Legal Assistance Locator](https://legalassistance.law.af.mil/) — Federal · Free · Military legal help
 
 ---
 

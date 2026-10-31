@@ -28,6 +28,8 @@
 <button type="button" class="filter" data-group="benefits">Benefits &amp; Public Assistance</button>
 <button type="button" class="filter" data-group="records">Criminal Records &amp; Expungement</button>
 <button type="button" class="filter" data-group="immigration">Immigration</button>
+<button type="button" class="filter" data-group="debt-credit">Debt &amp; Credit Help</button>
+<button type="button" class="filter" data-group="veterans-military">Veterans &amp; Military</button>
     </div>
     <div class="sidebar-note">
       <p><strong>Education only.</strong> This directory is general information, not legal advice.</p>
@@ -39,7 +41,9 @@
     <div class="toolbar">
       <label for="search">Search resources</label>
       <input type="search" id="search" placeholder="Search names, topics, jurisdiction&#8230;" autocomplete="off">
+      <label class="toggle" for="free-only"><input type="checkbox" id="free-only"> Free only</label>
       <span class="count" id="count">0 results</span>
+      <div id="no-results" class="no-results-msg">No resources match your filters. Try clearing the search or turning off “Free only”.</div>
     </div>
 
     <p class="disclaimer">This directory is for general educational information only. It is not legal advice, and it does not create an attorney-client relationship. For help with a specific legal problem, contact a qualified attorney or a legal aid office in your area. Links point to official government and legal aid websites; Asdale Dynamics, LLC does not operate those sites and is not responsible for their content.</p>
@@ -50,7 +54,7 @@
       <p class="group-desc">Official court forms and self-help centers from federal and state courts.</p>
       <div class="resource-list" id="list-court-forms">
         
-          <article class="resource-card" data-group="court-forms" data-id="uscourts-forms">
+            <article class="resource-card" data-group="court-forms" data-id="uscourts-forms" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.uscourts.gov/forms" target="_blank" rel="noopener">U.S. Courts — Official Court Forms</a></h3>
               <span class="badge official">Official link</span>
@@ -65,7 +69,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="court-forms" data-id="uscourts-pacer-fee-waiver">
+            <article class="resource-card" data-group="court-forms" data-id="uscourts-pacer-fee-waiver" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.uscourts.gov/services-forms/pacer-fee-waiver" target="_blank" rel="noopener">U.S. Courts — PACER Fee Waiver</a></h3>
               <span class="badge official">Official link</span>
@@ -80,7 +84,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="court-forms" data-id="usa-gov-courts">
+            <article class="resource-card" data-group="court-forms" data-id="usa-gov-courts" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.usa.gov/courts" target="_blank" rel="noopener">USA.gov — Find State and Local Courts</a></h3>
               <span class="badge official">Official link</span>
@@ -95,7 +99,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="court-forms" data-id="indiana-courts-self-help">
+            <article class="resource-card" data-group="court-forms" data-id="indiana-courts-self-help" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.in.gov/judiciary/self-service/" target="_blank" rel="noopener">Indiana Courts — Self-Service Legal Center</a></h3>
               <span class="badge official">Official link</span>
@@ -110,7 +114,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="court-forms" data-id="california-courts-self-help">
+            <article class="resource-card" data-group="court-forms" data-id="california-courts-self-help" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.courts.ca.gov/selfhelp.htm" target="_blank" rel="noopener">California Courts — Online Self-Help Center</a></h3>
               <span class="badge official">Official link</span>
@@ -125,7 +129,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="court-forms" data-id="texas-courts-forms">
+            <article class="resource-card" data-group="court-forms" data-id="texas-courts-forms" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.txcourts.gov/self-help/" target="_blank" rel="noopener">Texas Courts — Court Forms</a></h3>
               <span class="badge official">Official link</span>
@@ -140,7 +144,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="court-forms" data-id="nycourthelp">
+            <article class="resource-card" data-group="court-forms" data-id="nycourthelp" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://nycourthelp.gov/" target="_blank" rel="noopener">NY Courts — CourtHelp</a></h3>
               <span class="badge official">Official link</span>
@@ -162,7 +166,7 @@
       <p class="group-desc">Find free or low-cost legal help and attorney referral services.</p>
       <div class="resource-list" id="list-lawyer-referral">
         
-          <article class="resource-card" data-group="lawyer-referral" data-id="lsc-find-legal-aid">
+            <article class="resource-card" data-group="lawyer-referral" data-id="lsc-find-legal-aid" data-cost="Free (eligibility based)">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.lsc.gov/what-legal-aid/find-legal-aid" target="_blank" rel="noopener">Legal Services Corporation — Find Legal Aid</a></h3>
               <span class="badge official">Official link</span>
@@ -177,7 +181,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="lawyer-referral" data-id="aba-lawyer-referral">
+            <article class="resource-card" data-group="lawyer-referral" data-id="aba-lawyer-referral" data-cost="Referral service (consultation fees may apply)">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.americanbar.org/groups/legal_services/fls-home/ftl-lawyer-referral-directory/" target="_blank" rel="noopener">American Bar Association — Lawyer Referral Directory</a></h3>
               <span class="badge official">Official link</span>
@@ -192,7 +196,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="lawyer-referral" data-id="lawhelp">
+            <article class="resource-card" data-group="lawyer-referral" data-id="lawhelp" data-cost="Free (eligibility based)">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.lawhelp.org" target="_blank" rel="noopener">LawHelp.org — Free Legal Help by State</a></h3>
               <span class="badge official">Official link</span>
@@ -207,7 +211,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="lawyer-referral" data-id="pro-bono-net">
+            <article class="resource-card" data-group="lawyer-referral" data-id="pro-bono-net" data-cost="Free (eligibility based)">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.probono.net" target="_blank" rel="noopener">Pro Bono Net — Find Legal Help</a></h3>
               <span class="badge official">Official link</span>
@@ -222,7 +226,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="lawyer-referral" data-id="indiana-bar-referral">
+            <article class="resource-card" data-group="lawyer-referral" data-id="indiana-bar-referral" data-cost="Referral service (consultation fees may apply)">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.inbar.org/public/lawyer-referral-service/" target="_blank" rel="noopener">Indiana State Bar — Lawyer Referral Service</a></h3>
               <span class="badge official">Official link</span>
@@ -236,36 +240,6 @@
             <a href="https://www.inbar.org/public/lawyer-referral-service/" class="card-link" target="_blank" rel="noopener">Visit site <span aria-hidden="true">→</span></a>
           </article>
         
-
-          <article class="resource-card" data-group="lawyer-referral" data-id="va-legal-aid">
-            <header class="card-header">
-              <h3 class="card-title"><a href="https://www.va.gov/ogc/apps/accreditation/index.asp" target="_blank" rel="noopener">U.S. Department of Veterans Affairs — Legal Assistance</a></h3>
-              <span class="badge official">Official link</span>
-            </header>
-            <p class="card-desc">VA-accredited attorneys and agents who can help with veterans benefits claims at no charge.</p>
-            <div class="card-meta">
-              <span><strong>Jurisdiction:</strong> Federal</span>
-              <span><strong>Cost:</strong> Free</span>
-              <span><strong>Type:</strong> Veterans legal help</span>
-            </div>
-            <a href="https://www.va.gov/ogc/apps/accreditation/index.asp" class="card-link" target="_blank" rel="noopener">Visit site <span aria-hidden="true">→</span></a>
-          </article>
-        
-
-          <article class="resource-card" data-group="lawyer-referral" data-id="military-legal-assistance">
-            <header class="card-header">
-              <h3 class="card-title"><a href="https://legalassistance.law.af.mil/" target="_blank" rel="noopener">Military Legal Assistance Locator</a></h3>
-              <span class="badge official">Official link</span>
-            </header>
-            <p class="card-desc">Free legal assistance for servicemembers and eligible family members (JAG locator).</p>
-            <div class="card-meta">
-              <span><strong>Jurisdiction:</strong> Federal</span>
-              <span><strong>Cost:</strong> Free</span>
-              <span><strong>Type:</strong> Military legal help</span>
-            </div>
-            <a href="https://legalassistance.law.af.mil/" class="card-link" target="_blank" rel="noopener">Visit site <span aria-hidden="true">→</span></a>
-          </article>
-        
       </div>
     </section>
 
@@ -274,7 +248,7 @@
       <p class="group-desc">Official resources for renters: rights, repairs, eviction help, and fair housing.</p>
       <div class="resource-list" id="list-tenant-housing">
         
-          <article class="resource-card" data-group="tenant-housing" data-id="hud-tenants">
+            <article class="resource-card" data-group="tenant-housing" data-id="hud-tenants" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.hud.gov/topics/rental_assistance" target="_blank" rel="noopener">HUD — Tenant Rights and Resources</a></h3>
               <span class="badge official">Official link</span>
@@ -289,7 +263,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="tenant-housing" data-id="hud-fair-housing">
+            <article class="resource-card" data-group="tenant-housing" data-id="hud-fair-housing" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.hud.gov/program_offices/fair_housing_equal_opp/complaint-process" target="_blank" rel="noopener">HUD — Fair Housing Complaint</a></h3>
               <span class="badge official">Official link</span>
@@ -304,7 +278,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="tenant-housing" data-id="consumerfinance-housing-counseling">
+            <article class="resource-card" data-group="tenant-housing" data-id="consumerfinance-housing-counseling" data-cost="Free or low cost">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.consumerfinance.gov/find-a-housing-counselor/" target="_blank" rel="noopener">CFPB — Find a Housing Counselor</a></h3>
               <span class="badge official">Official link</span>
@@ -319,7 +293,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="tenant-housing" data-id="usa-gov-eviction">
+            <article class="resource-card" data-group="tenant-housing" data-id="usa-gov-eviction" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.usa.gov/eviction-rental-help" target="_blank" rel="noopener">USA.gov — Eviction and Rental Help</a></h3>
               <span class="badge official">Official link</span>
@@ -334,7 +308,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="tenant-housing" data-id="courts-tenant-self-help">
+            <article class="resource-card" data-group="tenant-housing" data-id="courts-tenant-self-help" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.ncsc.org/topics/housing/eviction" target="_blank" rel="noopener">National Center for State Courts — Eviction Resources</a></h3>
               <span class="badge official">Official link</span>
@@ -356,7 +330,7 @@
       <p class="group-desc">Official help with scams, debt, credit, warranties, and unfair business practices.</p>
       <div class="resource-list" id="list-consumer-help">
         
-          <article class="resource-card" data-group="consumer-help" data-id="ftc-consumer">
+            <article class="resource-card" data-group="consumer-help" data-id="ftc-consumer" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.consumer.ftc.gov/" target="_blank" rel="noopener">FTC — Consumer Advice</a></h3>
               <span class="badge official">Official link</span>
@@ -371,7 +345,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="consumer-help" data-id="ftc-report-fraud">
+            <article class="resource-card" data-group="consumer-help" data-id="ftc-report-fraud" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener">FTC — Report Fraud</a></h3>
               <span class="badge official">Official link</span>
@@ -386,7 +360,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="consumer-help" data-id="cfpb">
+            <article class="resource-card" data-group="consumer-help" data-id="cfpb" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.consumerfinance.gov/" target="_blank" rel="noopener">Consumer Financial Protection Bureau</a></h3>
               <span class="badge official">Official link</span>
@@ -401,7 +375,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="consumer-help" data-id="cfpb-complaint">
+            <article class="resource-card" data-group="consumer-help" data-id="cfpb-complaint" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.consumerfinance.gov/complaint/" target="_blank" rel="noopener">CFPB — Submit a Complaint</a></h3>
               <span class="badge official">Official link</span>
@@ -416,7 +390,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="consumer-help" data-id="usa-gov-consumer-complaints">
+            <article class="resource-card" data-group="consumer-help" data-id="usa-gov-consumer-complaints" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.usa.gov/consumer-complaints" target="_blank" rel="noopener">USA.gov — File a Consumer Complaint</a></h3>
               <span class="badge official">Official link</span>
@@ -431,7 +405,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="consumer-help" data-id="identity-theft">
+            <article class="resource-card" data-group="consumer-help" data-id="identity-theft" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.identitytheft.gov/" target="_blank" rel="noopener">FTC — IdentityTheft.gov</a></h3>
               <span class="badge official">Official link</span>
@@ -446,7 +420,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="consumer-help" data-id="donotcall">
+            <article class="resource-card" data-group="consumer-help" data-id="donotcall" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.donotcall.gov/" target="_blank" rel="noopener">FTC — National Do Not Call Registry</a></h3>
               <span class="badge official">Official link</span>
@@ -468,7 +442,7 @@
       <p class="group-desc">Official help with divorce, custody, child support, and domestic violence.</p>
       <div class="resource-list" id="list-family-law">
         
-          <article class="resource-card" data-group="family-law" data-id="vawo-domestic-violence">
+            <article class="resource-card" data-group="family-law" data-id="vawo-domestic-violence" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.thehotline.org/" target="_blank" rel="noopener">National Domestic Violence Hotline</a></h3>
               <span class="badge official">Official link</span>
@@ -483,7 +457,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="family-law" data-id="acf-child-support">
+            <article class="resource-card" data-group="family-law" data-id="acf-child-support" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.acf.hhs.gov/css" target="_blank" rel="noopener">Office of Child Support Enforcement</a></h3>
               <span class="badge official">Official link</span>
@@ -498,7 +472,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="family-law" data-id="usa-gov-divorce">
+            <article class="resource-card" data-group="family-law" data-id="usa-gov-divorce" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.usa.gov/divorce" target="_blank" rel="noopener">USA.gov — Divorce and Separation</a></h3>
               <span class="badge official">Official link</span>
@@ -520,7 +494,7 @@
       <p class="group-desc">Official help applying for SNAP, Medicaid, disability, and other benefits.</p>
       <div class="resource-list" id="list-benefits">
         
-          <article class="resource-card" data-group="benefits" data-id="usa-gov-benefits">
+            <article class="resource-card" data-group="benefits" data-id="usa-gov-benefits" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.usa.gov/benefits" target="_blank" rel="noopener">USA.gov — Benefits and Financial Assistance</a></h3>
               <span class="badge official">Official link</span>
@@ -535,7 +509,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="benefits" data-id="gov-snap">
+            <article class="resource-card" data-group="benefits" data-id="gov-snap" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.fns.usda.gov/snap/eligibility" target="_blank" rel="noopener">USDA — SNAP (Food Assistance)</a></h3>
               <span class="badge official">Official link</span>
@@ -550,7 +524,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="benefits" data-id="ssa-disability">
+            <article class="resource-card" data-group="benefits" data-id="ssa-disability" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.ssa.gov/disability/" target="_blank" rel="noopener">Social Security Administration — Disability Benefits</a></h3>
               <span class="badge official">Official link</span>
@@ -565,7 +539,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="benefits" data-id="medicaid">
+            <article class="resource-card" data-group="benefits" data-id="medicaid" data-cost="Free or low cost">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.medicaid.gov/" target="_blank" rel="noopener">Medicaid &amp; CHIP</a></h3>
               <span class="badge official">Official link</span>
@@ -587,7 +561,7 @@
       <p class="group-desc">Official resources for clearing or sealing criminal records where available.</p>
       <div class="resource-list" id="list-records">
         
-          <article class="resource-card" data-group="records" data-id="usa-gov-expungement">
+            <article class="resource-card" data-group="records" data-id="usa-gov-expungement" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.usa.gov/criminal-record-expungement" target="_blank" rel="noopener">USA.gov — Criminal Record Expungement</a></h3>
               <span class="badge official">Official link</span>
@@ -602,7 +576,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="records" data-id="fbi-background-check">
+            <article class="resource-card" data-group="records" data-id="fbi-background-check" data-cost="Fee applies">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.fbi.gov/services/cjis/identity-history-summary-checks" target="_blank" rel="noopener">FBI — Identity History Summary Check</a></h3>
               <span class="badge official">Official link</span>
@@ -624,7 +598,7 @@
       <p class="group-desc">Official U.S. government immigration forms and help (education only — not legal advice).</p>
       <div class="resource-list" id="list-immigration">
         
-          <article class="resource-card" data-group="immigration" data-id="uscis-forms">
+            <article class="resource-card" data-group="immigration" data-id="uscis-forms" data-cost="Free (filing fees may apply)">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.uscis.gov/forms/" target="_blank" rel="noopener">USCIS — Official Forms</a></h3>
               <span class="badge official">Official link</span>
@@ -639,7 +613,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="immigration" data-id="uscis-find-help">
+            <article class="resource-card" data-group="immigration" data-id="uscis-find-help" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.uscis.gov/tools/find-legal-help" target="_blank" rel="noopener">USCIS — Find Legal Help</a></h3>
               <span class="badge official">Official link</span>
@@ -654,7 +628,7 @@
           </article>
         
 
-          <article class="resource-card" data-group="immigration" data-id="eoir-pro-bono">
+            <article class="resource-card" data-group="immigration" data-id="eoir-pro-bono" data-cost="Free">
             <header class="card-header">
               <h3 class="card-title"><a href="https://www.justice.gov/eoir/pro-bono-legal-representation-lists" target="_blank" rel="noopener">EOIR — Pro Bono Legal Representation Lists</a></h3>
               <span class="badge official">Official link</span>
@@ -666,6 +640,125 @@
               <span><strong>Type:</strong> Immigration court help</span>
             </div>
             <a href="https://www.justice.gov/eoir/pro-bono-legal-representation-lists" class="card-link" target="_blank" rel="noopener">Visit site <span aria-hidden="true">→</span></a>
+          </article>
+        
+      </div>
+    </section>
+
+    <section id="group-debt-credit" class="group-section" aria-labelledby="heading-debt-credit">
+      <h2 id="heading-debt-credit">Debt &amp; Credit Help</h2>
+      <p class="group-desc">Official help with debt collection, credit reports, and money problems.</p>
+      <div class="resource-list" id="list-debt-credit">
+        
+            <article class="resource-card" data-group="debt-credit" data-id="cfpb-debt-collection" data-cost="Free">
+            <header class="card-header">
+              <h3 class="card-title"><a href="https://www.consumerfinance.gov/consumer-tools/debt-collection/" target="_blank" rel="noopener">CFPB — Debt Collection</a></h3>
+              <span class="badge official">Official link</span>
+            </header>
+            <p class="card-desc">Consumer Financial Protection Bureau tools and guidance for dealing with debt collectors.</p>
+            <div class="card-meta">
+              <span><strong>Jurisdiction:</strong> Federal</span>
+              <span><strong>Cost:</strong> Free</span>
+              <span><strong>Type:</strong> Debt help</span>
+            </div>
+            <a href="https://www.consumerfinance.gov/consumer-tools/debt-collection/" class="card-link" target="_blank" rel="noopener">Visit site <span aria-hidden="true">→</span></a>
+          </article>
+        
+
+            <article class="resource-card" data-group="debt-credit" data-id="cfpb-credit-reports" data-cost="Free">
+            <header class="card-header">
+              <h3 class="card-title"><a href="https://www.consumerfinance.gov/consumer-tools/credit-reports/" target="_blank" rel="noopener">CFPB — Credit Reports and Scores</a></h3>
+              <span class="badge official">Official link</span>
+            </header>
+            <p class="card-desc">Get and dispute your credit reports for free.</p>
+            <div class="card-meta">
+              <span><strong>Jurisdiction:</strong> Federal</span>
+              <span><strong>Cost:</strong> Free</span>
+              <span><strong>Type:</strong> Credit help</span>
+            </div>
+            <a href="https://www.consumerfinance.gov/consumer-tools/credit-reports/" class="card-link" target="_blank" rel="noopener">Visit site <span aria-hidden="true">→</span></a>
+          </article>
+        
+
+            <article class="resource-card" data-group="debt-credit" data-id="ftc-debt-collection" data-cost="Free">
+            <header class="card-header">
+              <h3 class="card-title"><a href="https://www.consumer.ftc.gov/articles/debt-collection" target="_blank" rel="noopener">FTC — Debt Collection</a></h3>
+              <span class="badge official">Official link</span>
+            </header>
+            <p class="card-desc">Federal Trade Commission guidance on debt collection and your rights.</p>
+            <div class="card-meta">
+              <span><strong>Jurisdiction:</strong> Federal</span>
+              <span><strong>Cost:</strong> Free</span>
+              <span><strong>Type:</strong> Debt help</span>
+            </div>
+            <a href="https://www.consumer.ftc.gov/articles/debt-collection" class="card-link" target="_blank" rel="noopener">Visit site <span aria-hidden="true">→</span></a>
+          </article>
+        
+
+            <article class="resource-card" data-group="debt-credit" data-id="ftc-credit-debt" data-cost="Free">
+            <header class="card-header">
+              <h3 class="card-title"><a href="https://www.consumer.ftc.gov/articles/credit-and-debt" target="_blank" rel="noopener">FTC — Credit and Debt</a></h3>
+              <span class="badge official">Official link</span>
+            </header>
+            <p class="card-desc">Federal Trade Commission guidance on credit cards, loans, and managing debt.</p>
+            <div class="card-meta">
+              <span><strong>Jurisdiction:</strong> Federal</span>
+              <span><strong>Cost:</strong> Free</span>
+              <span><strong>Type:</strong> Credit help</span>
+            </div>
+            <a href="https://www.consumer.ftc.gov/articles/credit-and-debt" class="card-link" target="_blank" rel="noopener">Visit site <span aria-hidden="true">→</span></a>
+          </article>
+        
+      </div>
+    </section>
+
+    <section id="group-veterans-military" class="group-section" aria-labelledby="heading-veterans-military">
+      <h2 id="heading-veterans-military">Veterans &amp; Military</h2>
+      <p class="group-desc">Official help for veterans, servicemembers, and families: benefits, claims, and legal aid.</p>
+      <div class="resource-list" id="list-veterans-military">
+        
+            <article class="resource-card" data-group="veterans-military" data-id="va-legal-aid" data-cost="Free">
+            <header class="card-header">
+              <h3 class="card-title"><a href="https://www.va.gov/ogc/agents/" target="_blank" rel="noopener">U.S. Department of Veterans Affairs — Legal Assistance</a></h3>
+              <span class="badge official">Official link</span>
+            </header>
+            <p class="card-desc">VA-accredited attorneys and agents who can help with veterans benefits claims at no charge.</p>
+            <div class="card-meta">
+              <span><strong>Jurisdiction:</strong> Federal</span>
+              <span><strong>Cost:</strong> Free</span>
+              <span><strong>Type:</strong> Veterans legal help</span>
+            </div>
+            <a href="https://www.va.gov/ogc/agents/" class="card-link" target="_blank" rel="noopener">Visit site <span aria-hidden="true">→</span></a>
+          </article>
+        
+
+            <article class="resource-card" data-group="veterans-military" data-id="va-benefits" data-cost="Free">
+            <header class="card-header">
+              <h3 class="card-title"><a href="https://www.va.gov/" target="_blank" rel="noopener">U.S. Department of Veterans Affairs — Benefits</a></h3>
+              <span class="badge official">Official link</span>
+            </header>
+            <p class="card-desc">VA benefits: disability compensation, pension, health care, and education (GI Bill).</p>
+            <div class="card-meta">
+              <span><strong>Jurisdiction:</strong> Federal</span>
+              <span><strong>Cost:</strong> Free</span>
+              <span><strong>Type:</strong> Veterans benefits</span>
+            </div>
+            <a href="https://www.va.gov/" class="card-link" target="_blank" rel="noopener">Visit site <span aria-hidden="true">→</span></a>
+          </article>
+        
+
+            <article class="resource-card" data-group="veterans-military" data-id="military-legal-assistance" data-cost="Free">
+            <header class="card-header">
+              <h3 class="card-title"><a href="https://legalassistance.law.af.mil/" target="_blank" rel="noopener">Military Legal Assistance Locator</a></h3>
+              <span class="badge official">Official link</span>
+            </header>
+            <p class="card-desc">Free legal assistance for servicemembers and eligible family members (JAG locator).</p>
+            <div class="card-meta">
+              <span><strong>Jurisdiction:</strong> Federal</span>
+              <span><strong>Cost:</strong> Free</span>
+              <span><strong>Type:</strong> Military legal help</span>
+            </div>
+            <a href="https://legalassistance.law.af.mil/" class="card-link" target="_blank" rel="noopener">Visit site <span aria-hidden="true">→</span></a>
           </article>
         
       </div>
@@ -807,24 +900,6 @@
           "jurisdiction": "Indiana",
           "cost": "Referral service (consultation fees may apply)",
           "type": "Lawyer referral"
-        },
-        {
-          "id": "va-legal-aid",
-          "name": "U.S. Department of Veterans Affairs — Legal Assistance",
-          "url": "https://www.va.gov/ogc/apps/accreditation/index.asp",
-          "description": "VA-accredited attorneys and agents who can help with veterans benefits claims at no charge.",
-          "jurisdiction": "Federal",
-          "cost": "Free",
-          "type": "Veterans legal help"
-        },
-        {
-          "id": "military-legal-assistance",
-          "name": "Military Legal Assistance Locator",
-          "url": "https://legalassistance.law.af.mil/",
-          "description": "Free legal assistance for servicemembers and eligible family members (JAG locator).",
-          "jurisdiction": "Federal",
-          "cost": "Free",
-          "type": "Military legal help"
         }
       ]
     },
@@ -1083,6 +1158,83 @@
           "jurisdiction": "Federal",
           "cost": "Free",
           "type": "Immigration court help"
+        }
+      ]
+    },
+    {
+      "id": "debt-credit",
+      "name": "Debt & Credit Help",
+      "description": "Official help with debt collection, credit reports, and money problems.",
+      "resources": [
+        {
+          "id": "cfpb-debt-collection",
+          "name": "CFPB — Debt Collection",
+          "url": "https://www.consumerfinance.gov/consumer-tools/debt-collection/",
+          "description": "Consumer Financial Protection Bureau tools and guidance for dealing with debt collectors.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Debt help"
+        },
+        {
+          "id": "cfpb-credit-reports",
+          "name": "CFPB — Credit Reports and Scores",
+          "url": "https://www.consumerfinance.gov/consumer-tools/credit-reports/",
+          "description": "Get and dispute your credit reports for free.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Credit help"
+        },
+        {
+          "id": "ftc-debt-collection",
+          "name": "FTC — Debt Collection",
+          "url": "https://www.consumer.ftc.gov/articles/debt-collection",
+          "description": "Federal Trade Commission guidance on debt collection and your rights.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Debt help"
+        },
+        {
+          "id": "ftc-credit-debt",
+          "name": "FTC — Credit and Debt",
+          "url": "https://www.consumer.ftc.gov/articles/credit-and-debt",
+          "description": "Federal Trade Commission guidance on credit cards, loans, and managing debt.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Credit help"
+        }
+      ]
+    },
+    {
+      "id": "veterans-military",
+      "name": "Veterans & Military",
+      "description": "Official help for veterans, servicemembers, and families: benefits, claims, and legal aid.",
+      "resources": [
+        {
+          "id": "va-legal-aid",
+          "name": "U.S. Department of Veterans Affairs — Legal Assistance",
+          "url": "https://www.va.gov/ogc/agents/",
+          "description": "VA-accredited attorneys and agents who can help with veterans benefits claims at no charge.",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Veterans legal help"
+        },
+        {
+          "id": "va-benefits",
+          "name": "U.S. Department of Veterans Affairs — Benefits",
+          "url": "https://www.va.gov/",
+          "description": "VA benefits: disability compensation, pension, health care, and education (GI Bill).",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Veterans benefits"
+        },
+        {
+          "id": "military-legal-assistance",
+          "name": "Military Legal Assistance Locator",
+          "url": "https://legalassistance.law.af.mil/",
+          "description": "Free legal assistance for servicemembers and eligible family members (JAG locator).",
+          "jurisdiction": "Federal",
+          "cost": "Free",
+          "type": "Military legal help"
         }
       ]
     }

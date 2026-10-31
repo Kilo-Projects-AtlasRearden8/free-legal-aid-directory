@@ -57,6 +57,27 @@ h3 { font-size: 1rem; margin-top: 0; color: var(--accent); }
 #search { flex: 1; min-width: 200px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px; font-size: 0.95rem; background: #fff; }
 .count { font-size: 0.85rem; color: var(--muted); white-space: nowrap; }
 
+.toggle {
+  margin-left: auto;
+  font-size: 0.88rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+.toggle input { accent-color: var(--accent); }
+
+.mark,
+mark { background: #fff3b0; color: var(--text); border-radius: 2px; padding: 0 2px; }
+
+.no-results-msg {
+  display: none;
+  margin-top: 8px;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 .disclaimer {
   margin: 0 0 24px; padding: 14px 16px; background: #fffbeb; border-left: 4px solid #d9a43b;
   border-radius: 0 8px 8px 0; font-size: 0.88rem; color: #6b5b15;
